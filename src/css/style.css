@@ -1,0 +1,7 @@
+@import 'container.css';
+body {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    background: #aabbcc;
+}
