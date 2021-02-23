@@ -1,6 +1,14 @@
+:root{
+    --btn-outline-primary-color: #2199e8;
+}
+
 .container {
     width: 435px;
     height: 205px;
     background: #ffffff;
     margin-top: 0.5rem;
+}
+
+.btn-add-todo {
+    background: var(--btn-outline-primary-color);
 }

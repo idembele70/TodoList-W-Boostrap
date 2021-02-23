@@ -4,4 +4,5 @@ body {
     width: 100vw;
     padding: 0;
     background: #aabbcc;
+    user-select: none;
 }
