@@ -1,6 +1,3 @@
-:root{
-    --btn-outline-primary-color: #2199e8;
-}
 
 .container {
     width: 435px;
@@ -9,6 +6,9 @@
     margin-top: 0.5rem;
 }
 
-.btn-add-todo {
-    background: var(--btn-outline-primary-color);
+.btn-add-todo:hover {
+background: #1a83cc;
+}
+.btn-add-todo::before{
+    content: '+ ';
 }
