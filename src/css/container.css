@@ -1,14 +1,39 @@
-
+*{
+    box-sizing:border-box;
+}
 .container {
-    width: 435px;
-    height: 205px;
+    width: 540px;
+    height: 255px;
     background: #ffffff;
     margin-top: 0.5rem;
 }
-
+.todo-title::after {
+    content: '()';
+}
 .btn-add-todo:hover {
 background: #1a83cc;
 }
 .btn-add-todo::before{
     content: '+ ';
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.input-add-todo{
+    outline:none;
+    border:none;
+    box-shadow:  -1px -1px 2px transparent,
+                    -1px 1px 2px transparent;
+                    border:none;
+}
+
+.input-add-todo:focus{
+outline:none;
+border:none;
+box-shadow:  -1px -1px 2px black,
+                -1px 1px 2px #C4C4C4;
+                border:none;   
+}
+.btn-add-todo{
+    box-shadow: -2px -2px 2px #1a83cc;
 }
