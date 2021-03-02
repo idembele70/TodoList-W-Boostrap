@@ -1,15 +1,19 @@
 
 // Selector
 const todoTitle = document.querySelector('.todo-title');
-const inputAddTodo = document.querySelector('input.input-add-todo');
+const inputAddTodo = document.getElementById('input-add-todo');
 
 // insert in Document
 inputAddTodo.addEventListener('focus',()=>{
-        inputAddTodo.classList.remove('border','border-3');
+        inputAddTodo.classList.add('border-dark');
+        
+        inputAddTodo.classList.add('shadow-sm');
 },true)
 
 inputAddTodo.addEventListener('blur',()=>{
-        inputAddTodo.classList.add('border','border-3')
+        inputAddTodo.classList.remove('shadow-sm');
+
+        inputAddTodo.classList.remove('border-dark');
 },true)
 
 

@@ -2,14 +2,19 @@
     box-sizing:border-box;
 }
 .container {
-    width: 540px;
-    height: 255px;
+    width: 45rem;
+    height: 23.125rem;
     background: #ffffff;
     margin-top: 0.5rem;
 }
 .todo-title::after {
     content: '()';
 }
+
+.btn-add-todo {
+max-width: 75px;
+}
+
 .btn-add-todo:hover {
 background: #1a83cc;
 }
@@ -25,7 +30,7 @@ background: #1a83cc;
     box-shadow:  -1px -1px 2px transparent,
                     1px 1px 2px transparent;
                     border:none;
-                    margin-right: 1px;
+                    /* margin-right: 1px; */
                 } 
                 
  /* #input-add-todo:focus{
