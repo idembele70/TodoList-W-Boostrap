@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List avec bootstrap</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/scss/app.css">
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
@@ -15,9 +15,15 @@
         <div class="row ">
             <h1 class="p-0 m-0 text-left todo-title">Tasks&nbsp;</h1>
         </div>
+        <div class="row m-0 mt-3 position-relative">
+            <input id="input-add-todo" class=" col-10 rounded-0 border border-1 p-2 fs-6 fw-light w-100" type="text">
+            <button type="submit"
+                class=" btn-add-todo btn btn-primary p-0 position-absolute h-100 end-0 rounded-0 shadow-none text-white fs-6">Add</button>
+        </div>
         <div class="row m-0 mt-3">
-            <input id="input-add-todo" class=" py-1 col-10 rounded-0 border border-1 p-0 outline-none" type="text" >
-            <button type="submit" class=" btn-add-todo btn btn-primary p-0 col rounded-0 shadow-none text-white fs-6">Add</button>
+            <div class="col-8"></div>
+            <button type="button" class="btn btn-warning col-2">Warning</button>
+            <button type="button" class="btn btn-danger col-2">Danger</button>
         </div>
     </div>
     <script src="./src/js/main.js"></script>
