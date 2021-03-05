@@ -1,11 +1,12 @@
 *{
     box-sizing:border-box;
 }
-.container {
-    width: 45rem;
+.container-main {
+    width: 45rem !important;
     height: 23.125rem;
     background: #ffffff;
     margin-top: 0.5rem;
+    margin: 0 auto;
 }
 .todo-title::after {
     content: '()';
