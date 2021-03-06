@@ -32,3 +32,8 @@ background: #1a83cc;
                   1px 1px 2px transparent;
     transition: border .25s ease-in;
                 } 
+
+* > .btn{
+    outline: none ;
+    border: none ;
+}
