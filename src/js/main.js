@@ -15,7 +15,7 @@ inputAddTodo.addEventListener('blur',()=>{
         inputAddTodo.classList.remove('shadow-sm');
 },false);
 
-export class todo {
+class todo {
  AddTodo() {
         
 }
