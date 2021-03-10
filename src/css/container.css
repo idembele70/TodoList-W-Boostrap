@@ -3,7 +3,7 @@
 }
 .container-main {
     width: 45rem !important;
-    height: 23.125rem;
+    min-height: 23.125rem;
     background: #ffffff;
     margin-top: 0.5rem;
     margin: 0 auto;
@@ -35,6 +35,6 @@ background: #1a83cc;
 
 .row p:hover {
     cursor: pointer;
-    background-color: grey;
-    transition: 1s;
+    background-color: rgba(0,0,0,0.05);
+    transition: .5s;
 }
