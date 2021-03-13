@@ -34,6 +34,10 @@ btnAddTodo.onclick = function () {
         </p>`
                 inputAddTodo.value = '';
         }
+        deleteItems()
+}
+
+function deleteItems() {
         let i;
         for (i = 0; i < closed.length ; i++) {
                 closed[i].onclick = function() {   
@@ -46,3 +50,6 @@ btnAddTodo.onclick = function () {
         }
 }
 
+function deleteAll() {
+        todoList.innerHTML = "";
+}
