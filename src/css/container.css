@@ -36,8 +36,12 @@ background: #1a83cc;
 .row p:hover {
     background-color: rgba(0,0,0,0.05);
     transition: .5s;
+    cursor: pointer;
 }
 
 .close {
     cursor: pointer;
+}
+.upper{
+    text-decoration: line-through;
 }
