@@ -32,16 +32,23 @@ background: #1a83cc;
                   1px 1px 2px transparent;
     transition: border .25s ease-in;
                 } 
-
-.row p:hover {
+.row {
+    max-width: 672px;
+}
+.row div span:hover {
     background-color: rgba(0,0,0,0.05);
     transition: .5s;
-    cursor: pointer;
 }
 
 .close {
     cursor: pointer;
+    z-index: 2;
 }
-.upper{
+
+.todo-items{
+    cursor: pointer;
+}
+
+.taskChecked{
     text-decoration: line-through;
 }
