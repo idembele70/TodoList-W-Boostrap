@@ -6,7 +6,7 @@ const btnAddTodo = document.getElementsByClassName('btn-add-todo')[0];
 const todoList = document.querySelector('.todolist');
 var todo = document.getElementsByClassName('todo');
 const todoLine = document.getElementsByClassName('line');
-const closed = document.getElementsByClassName('close');
+const closed = document.getElementsByTagName('p');
 let task = '';
 
 // functions
@@ -30,8 +30,8 @@ btnAddTodo.onclick = function () {
         } else {
                 addTask()
                 inputAddTodo.value = '';
+                console.log(closed);
         }
-        deleteItems();
         itemChecked();
 }
 
@@ -39,26 +39,19 @@ btnAddTodo.onclick = function () {
 // ajouter une nouvelle todo
 function addTask() {
         todoList.innerHTML +=
-                `<div class="line col-12 m-0 mb-2 border border-dark p-0 d-flex justify-content-between align-items-center">
-                <span class="todo-items w-100 h-100 d-flex align-items-center">
-                   <p class="m-0 "> ${inputAddTodo.value}</p>
+                `   <div class="col-12 m-0 mb-2 border  d-flex align-items-center border-dark p-0">
+                <span class="col todo-items p-0 d-table h-100">
+                   <p class="col m-0 d-table-cell align-middle "> ${inputAddTodo.value}</p>
                 </span>
-                <button type="button" class="closef btn btn-danger px-3 shadow-none"><i class="fas fa-times"></i></button>
+                <button type="button" class="close btn btn-danger px-1 shadow-none col-1"><i class="fas fa-times"></i></button>
             </div>`
 }
 
 // supprimer un items
-function deleteItems() {
-        let i;
-        for (i = 0; i < close.length; i++) {
-                closed[i].onclick = function() {
-                        console.log('ok');
-                        const parent = this.parentElement;
-                        parent.style.opacity = 0;
-                        setTimeout(() => {
-                                parent.style.display = "none";
-                        }, 300);
-                }
+let i;
+for (i =0; i< closed.length;i++) {
+        closed[i].onclick = ()=> {
+               console.log(closed[i]);
         }
 }
 
