@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List avec bootstrap</title>
-    <link rel="stylesheet" href="./src/scss/app.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="./src/css/style.css">
     <script src="https://kit.fontawesome.com/25429df188.js" crossorigin="anonymous"></script>
 </head>
@@ -23,18 +24,14 @@
         </div>
         <div class="row m-0 mt-3">
             <div class="col-7"></div>
-            <button type="button" class="btn btn-warning col py-2 text-white shadow-none"><i class="fas fa-check">&nbsp;</i>Clear
+            <button type="button" class="btn btn-warning col py-2 text-white shadow-none"><i
+                    class="fas fa-check">&nbsp;</i>Clear
                 completed</button>
-            <button type="button" onclick="deleteAll()" class="btn btn-danger col-2 shadow-none"><i class="fas fa-trash-alt">&nbsp;</i>Clear all</button>
+            <button type="button" onclick="deleteAll()" class="btn btn-danger col-2 shadow-none"><i
+                    class="fas fa-trash-alt">&nbsp;</i>Clear all</button>
         </div>
         <div class="row m-0 mt-3 todolist">
-            <!-- <div class="col-12 m-0 mb-2 border  d-flex align-items-center border-dark p-0">
-                <span class="col todo-items p-0 d-table h-100">
-                   <p class="col m-0 d-table-cell align-middle "> ${inputAddTodo.value}</p>
-                </span>
-                <button type="button " class="close btn btn-danger px-1 shadow-none col-1"><i class="fas fa-times"></i></button>
-            </div> -->
-      
+
         </div>
     </div>
     <script src="./src/js/main.js"></script>

@@ -35,10 +35,7 @@ background: #1a83cc;
 .row {
     max-width: 672px;
 }
-.row div span:hover {
-    background-color: rgba(0,0,0,0.05);
-    transition: .5s;
-}
+
 
 .close {
     cursor: pointer;
@@ -56,4 +53,21 @@ p{
 
 .taskChecked{
     text-decoration: line-through;
+    background-color: rgba(0,128,0,0.05);
+    border:2px solid rgba(0,128,0,0.2);
 }
+
+.taskChecked:hover{
+    background-color: rgba(0,128,0,0.15);
+    border:2px solid rgba(0,128,0,0.2);
+}
+.taskNotChecked{
+    border:2px solid rgba(0, 0, 0, 0.26);
+    transition: opacity .3s ease-in;
+}
+.taskNotChecked:hover {
+    background-color: rgba(0,0,0,0.05);
+    border:2px solid rgba(0, 0, 0, 0.26);
+}
+/* border:2px solid #2199e8; */
+
