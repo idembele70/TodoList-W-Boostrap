@@ -1,4 +1,3 @@
-
 // Selector
 const todoTitle = document.querySelector('.todo-title');
 const inputAddTodo = document.getElementById('input-add-todo');
@@ -6,6 +5,10 @@ const btnAddTodo = document.getElementsByClassName('btn-add-todo')[0];
 const todoList = document.querySelector('.todolist');
 var todo = document.getElementsByClassName('todo');
 
+// Compteur Variable
+const compteur = 0;
+let todoCompteur = todoList.childElementCount;
+const TodoCompteurContainer = createElems('span');
 // functions
 
 // Bootsrap Event
@@ -33,6 +36,8 @@ btnAddTodo.onclick = function () {
                    <button type="button" onclick="closeTodo(this.parentElement)" class="close btn btn-danger px-1 shadow-none rounded-0 col-1"><i class="fas fa-times"></i></button>
                 </div>`
                 inputAddTodo.value = '';
+                todoCompteur++
+                todoCompteurInit();
         }
 }
 // supprimer un items
@@ -41,17 +46,31 @@ function closeTodo(todo) {
         setTimeout(() => {
                 todoList.removeChild(todo)
         }, 200);
+        todoCompteur--;
+        todoCompteurInit()
 }
 
 // supprimer tout les items
 function deleteAll() {
         todoList.innerHTML = "";
+        todoCompteur = 0
+        todoCompteurInit()
 }
 
 // items completé
 function itemChecked(e) {
-        
         return e.classList.toggle('taskChecked'), e.classList.toggle('taskNotChecked');
+}
+
+(function todoCompteurFunc() {
+        TodoCompteurContainer.style.opacity = .4;
+        TodoCompteurContainer.appendChild(document.createTextNode(`(${todoCompteur})`));
+        todoTitle.appendChild(TodoCompteurContainer);
+})()
+
+// TodoCompteur 
+function todoCompteurInit() {
+       TodoCompteurContainer.replaceChild(document.createTextNode(`(${todoCompteur})`),TodoCompteurContainer.childNodes[0]);
 }
 
 function createElems(elems) {

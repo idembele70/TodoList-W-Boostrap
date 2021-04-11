@@ -8,9 +8,9 @@
     margin-top: 0.5rem;
     margin: 0 auto;
 }
-.todo-title::after {
+/* .todo-title::after {
     content: '()';
-}
+} */
 
 .btn-add-todo {
 max-width: 75px;
